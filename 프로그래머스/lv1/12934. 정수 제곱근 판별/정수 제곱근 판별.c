@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include <stdbool.h>
 #include <stdlib.h>
-#include <math.h>
 
 long long solution(long long n) {
-    double Sqrt=sqrt(n);
-    if(Sqrt==(int)Sqrt) return (Sqrt+1)*(Sqrt+1);
+    for(double i=1;i*i<=n;i++){
+        if(i*i==n) return (i+1)*(i+1);
+    }
     return -1;
 }
